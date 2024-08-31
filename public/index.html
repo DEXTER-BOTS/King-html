@@ -1,1 +1,26 @@
-1234
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GitHub Repo Uploader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Upload to GitHub Repository</h1>
+    <form id="uploadForm">
+        <label for="token">GitHub Token:</label>
+        <input type="text" id="token" name="token" required><br><br>
+
+        <label for="repoName">New Repo Name:</label>
+        <input type="text" id="repoName" name="repoName" required><br><br>
+
+        <label for="zipFile">Select Zip File:</label>
+        <input type="file" id="zipFile" name="zipFile" accept=".zip" required><br><br>
+
+        <button type="submit">Create and Upload</button>
+    </form>
+    <div id="status"></div>
+    <script src="script.js"></script>
+</body>
+</html>
